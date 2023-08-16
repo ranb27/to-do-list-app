@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 50);
+    font-family: poppins;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+h2{
+    color: whitesmoke;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#inputBox{
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#list li{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    list-style: none;
+    margin: .5rem 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+
+#list li.done{
+    text-decoration: line-through;
+    color: rgb(24, 192, 24);
+}
+
+#list li i{
+    width: 25px;
+    height: 25px;
+    background: rgb(235, 35, 35);
+    position: absolute;
+    right: 0;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#list li i::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: black;
+    transform: rotate(45deg);
+}
+
+#list li i::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: black;
+    transform: rotate(-45deg);
+}
+
+footer{
+    position: absolute;
+    bottom: 1rem;
+    color: skyblue;
+}
