@@ -96,6 +96,10 @@ footer{
         padding: 0 1rem;
     }
 
+    body{
+        align-items: flex-start;
+    }
+
     li{
         overflow: auto;
     }
